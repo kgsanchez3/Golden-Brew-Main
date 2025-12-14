@@ -1298,3 +1298,142 @@ footer {
   }
 }
 
+/* ============================= */
+/* Our Story Page Styles */
+/* ============================= */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.8;
+  color: #4B3F2F; /* warm earthy text */
+  background-color: #FFF8F0; /* soft warm background */
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER NAVIGATION */
+header {
+  background: #0a1f44; /* dark blue */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #ffd966; /* golden logo */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffd966; /* golden links */
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  background-color: #ffd966;
+  color: #0a1f44;
+}
+
+/* MAIN CONTENT */
+main {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.our-story h1 {
+  text-align: center;
+  color: #0a1f44; /* dark blue heading */
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.our-story h2 {
+  color: #B38B59; /* golden earthy subheading */
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.our-story p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* HIGHLIGHTED TEXT */
+.our-story p strong {
+  color: #ffd966;
+  font-weight: 600;
+}
+
+/* SECTION STYLING */
+.our-story section {
+  background-color: #FFF3E6; /* lighter warm section */
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #0a1f44;
+  color: #ffd966;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .our-story h1 {
+    font-size: 2rem;
+  }
+
+  .our-story p {
+    font-size: 1rem;
+  }
+
+  .our-story section {
+    padding: 20px 15px;
+  }
+}
+
+
+
