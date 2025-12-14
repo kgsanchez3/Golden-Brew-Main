@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golden Brew - Products</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="images/logo (2).jpg" alt="Cafe Galilea">
+    </div>
+
+    <!-- Burger menu -->
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+
+    <!-- Navigation links -->
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="feature.html">Features</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+  <!-- PRODUCTS -->
+  <section class="products">
+    <h1>Our Menu</h1>
+
+    <!-- Search Bar -->
+    <input type="text" id="searchBar" placeholder="Search for products..." onkeyup="searchProducts()">
+
+    <!-- ========== SIPS (Drinks) ========== -->
+    <h2 class="menu-category">SIPS</h2>
+    <div class="product-grid" id="sips">
+      <div class="product">
+        <img src="images/baristas.jpg" alt="Barista's Pick">
+        <h3>Barista's Pick</h3>
+        <p>₱150</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Barista\'s Pick')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/biscoff.jpg" alt="biscoff">
+        <h3>Biscoff</h3>
+        <p>₱170</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Biscoff')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/blackf.jpg" alt="bf">
+        <h3>Black Forest</h3>
+        <p>₱150</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Black Forest')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/chocomalt.jpg" alt="cm">
+        <h3>Chocomalt Latte</h3>
+        <p>₱150</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Chocomalt Latte')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/matcha.jpg" alt="matcha">
+        <h3>Matcha</h3>
+        <p>₱150</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Matcha')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/milo.jpg" alt="mk">
+        <h3>Milo Krunch</h3>
+        <p>₱150</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Milo Krunch')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/ube.jpg" alt="ube">
+        <h3>Ube Macapuno</h3>
+        <p>₱170</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Ube Macapuno')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/oat.jpg" alt="oat">
+        <h3>Sweet Oat Latte</h3>
+        <p>₱170</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Sweet Oat Latte')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/triple dark.jpg" alt="ttp">
+        <h3>Triple Dark Chocolate Chip</h3>
+        <p>₱170</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Triple Dark Chocolate Chip')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/oreosandmatcha.jpg" alt="om">
+        <h3>Oreos & Matcha</h3>
+        <p>₱170</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Oreos & Matcha')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/seasat.jpg" alt="ss">
+        <h3>Seasalt Latte</h3>
+        <p>₱170</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Seasalt Latte')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/smores.jpg" alt="smm">
+        <h3>Cinnamon S'mores</h3>
+        <p>₱170</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Cinnamon S\'mores')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/strawberries.jpg" alt="sbr">
+        <h3>Strawberries & Cream</h3>
+        <p>₱170</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Strawberries & Cream')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/lemonade.jpg" alt="lemonade">
+        <h3>Lemonade</h3>
+        <p>₱120</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Lemonade')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/pink iced tea.jpg" alt="ptea">
+        <h3>Pink Iced Tea</h3>
+        <p>₱120</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Pink Iced Tea')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+      
+      <div class="product">
+        <img src="images/iced tea lemon.jpg" alt="ilem">
+        <h3>Iced Tea Lemon</h3>
+        <p>₱120</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Iced Tea Lemon')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/sb marga.jpg" alt="sbm">
+        <h3>Strawberry Margarita</h3>
+        <p>₱150</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Strawberry Margarita')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/frozen.jpg" alt="froze">
+        <h3>Frozen Margarita</h3>
+        <p>₱150</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Frozen Margarita')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+    </div>
+
+    <!-- APPETIZERS -->
+    <h2 class="menu-category">APPETIZERS</h2>
+    <div class="product-grid" id="appetizers">
+      <div class="product">
+        <img src="images/beef nachos.jpg" alt="bfn">
+        <h3>Beef Nachos</h3>
+        <p>₱120</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Beef Nachos')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/bf burger.jpg" alt="bfb">
+        <h3>Buffalo Burger</h3>
+        <p>₱170</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Buffalo Burger')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/waffle.jpg" alt="wse">
+        <h3>Eggs, Sausage, and Waffles</h3>
+        <p>₱190</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Eggs, Sausage, and Waffles')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/eggs.jpg" alt="egg">
+        <h3>Cheezzy Egg</h3>
+        <p>₱150</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Cheezzy Egg')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/sandwich and f.jpg" alt="saf">
+        <h3>Sandwich & Fries</h3>
+        <p>₱150</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Sandwich & Fries')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/ube ganache.jpg" alt="ugp">
+        <h3>Ube Ganache Pancake</h3>
+        <p>₱150</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Ube Ganache Pancake')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+    </div>
+
+    <!-- ========== MEALS ========== -->
+    <h2 class="menu-category">MEALS</h2>
+    <div class="product-grid" id="meals">
+      <div class="product">
+        <img src="images/beef pares.jpg" alt="bp">
+        <h3>Beef Pares</h3>
+        <p>₱180</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Beef Pares')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/bf chicken.jpg" alt="bc">
+        <h3>Breakfast Chicken</h3>
+        <p>₱170</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Breakfast Chicken')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/steak.jpg" alt="stk">
+        <h3>USD Ribeye Steak</h3>
+        <p>₱950</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('USD Ribeye Steak')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/friedp.jpg" alt="frp">
+        <h3>Fried Pork with House Sarsa</h3>
+        <p>₱250</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Fried Pork with House Sarsa')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/dquarter.jpg" alt="dpq">
+        <h3>Double Quarter Pounder</h3>
+        <p>₱390</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Double Quarter Pounder')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/bfast overload.jpg" alt="bfo">
+        <h3>Breakfast Overload</h3>
+        <p>₱420</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Breakfast Overload')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/krispy kk.jpg" alt="kkk">
+        <h3>Krispy Kare-Kare</h3>
+        <p>₱390</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Krispy Kare-Kare')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/sisig.jpg" alt="sbb">
+        <h3>Sisig Bibimbap</h3>
+        <p>₱190</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Sisig Bibimbap')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/alaking.jpg" alt="ak">
+        <h3>Chicken Ala King</h3>
+        <p>₱320</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Chicken Ala King')">Add to Cart</button>
+       <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/hickory.jpg" alt="hpb">
+        <h3>Hickory Pork Belly</h3>
+        <p>₱390</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Hickory Pork Belly')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/chicken pastil.jpg" alt="cpd">
+        <h3>Chicken Pastil</h3>
+        <p>₱190</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Chicken Pastil')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/smoke bbq.jpg" alt="sbr">
+        <h3>Smoked BBQ Ribs</h3>
+        <p>₱450</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Smoked BBQ Ribs')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/bulalo kk.jpg" alt="bkkk">
+        <h3>Bulalo Kare-Kare</h3>
+        <p>₱390</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Bulalo Kare-Kare')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/overload lunch.jpg" alt="olnch">
+        <h3>Overload Lunch</h3>
+        <p>₱490</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Overload Lunch')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/daing.jpg" alt="daing">
+        <h3>Daing na Bangus</h3>
+        <p>₱290</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Daing na Bangus')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/fried chicken.jpg" alt="fcc">
+        <h3>Fried Chicken</h3>
+        <p>₱290</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Fried Chicken')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/fried mpork.jpg" alt="mpork">
+        <h3>Fried Marinated Pork</h3>
+        <p>₱290</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Fried Marinated Pork')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/pork adobo.jpg" alt="po">
+        <h3>Adobo Glazed Bowl</h3>
+        <p>₱250</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Adobo Glazed Bowl')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+    </div>
+
+    <!-- PASTA -->
+    <h2 class="menu-category">PASTA</h2>
+    <div class="product-grid" id="pasta">
+      <div class="product">
+        <img src="images/bn carb.jpg" alt="bn">
+        <h3>Bird's Nest Carbonara</h3>
+        <p>₱320</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Bird\'s Nest Carbonara')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/sst pasta.jpg" alt="sst">
+        <h3>Spanish Sardine & Tomatoes Pasta</h3>
+        <p>₱390</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Spanish Sardine & Tomatoes Pasta')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/marinara chicken.jpg" alt="ccm">
+        <h3>Creamy Chicken Marinara</h3>
+        <p>₱290</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Creamy Chicken Marinara')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/spag.jpg" alt="spag">
+        <h3>Spaghetti</h3>
+        <p>₱290</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Spaghetti')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/creamy carb.jpg" alt="cc">
+        <h3>Creamy Carbonara</h3>
+        <p>₱220</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Creamy Carbonara')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+    </div>
+
+    <!-- ========== PIZZA ========== -->
+    <h2 class="menu-category">PIZZA</h2>
+    <div class="product-grid" id="pizza">
+      <div class="product">
+        <img src="images/truffle.jpg" alt="Truffle Pizza">
+        <h3>Truffle Pizza</h3>
+        <p>₱280</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Truffle Pizza')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/philly pizza.jpg" alt="Philly Cheesesteak Pizza">
+        <h3>Philly Cheesesteak Pizza</h3>
+        <p>₱320</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Philly Cheesesteak Pizza')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/bacon.jpg" alt="Bacon Pizza">
+        <h3>Bacon & Mushroom Melt</h3>
+        <p>₱320</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Bacon & Mushroom Melt')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/garlic.jpg" alt="Garlic Pizza">
+        <h3>Garlic & Shrimp Pizza</h3>
+        <p>₱320</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Garlic & Shrimp Pizza')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/chheseb pizza.jpg" alt="cbd">
+        <h3>Cheese Burger Deluxe Pizza</h3>
+        <p>₱320</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Cheese Burger Deluxe Pizza')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/tropical pizza.jpg" alt="Tropical Hawaiian Pizza">
+        <h3>Tropical Hawaiian Pizza</h3>
+        <p>₱280</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Tropical Hawaiian Pizza')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+    </div>
+
+    <!-- ========== PASTRIES ========== -->
+    <h2 class="menu-category">PASTRIES</h2>
+    <div class="product-grid" id="pastries">
+        <div class="product">
+        <img src="images/sakura.jpg" alt="Sakura">
+        <h3>Sakura Cake</h3>
+        <p>₱150</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Red Velvet Cake')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/hokkaido.jpg" alt="hokkai">
+        <h3>Hokkaido Cake</h3>
+        <p>₱150</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Red Velvet Cake')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/ube cream.jpg" alt="ube cream">
+        <h3>Ube Cream Cake</h3>
+        <p>₱150</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Red Velvet Cake')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/banoffee.jpg" alt="banoffee">
+        <h3>Banoffee</h3>
+        <p>₱145</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Red Velvet Cake')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/blueberry.jpg" alt="Blueberry Cheesecake">
+        <h3>Blueberry Cheesecake</h3>
+        <p>₱170</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Blueberry Cheesecake')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/oreo cheesecake.jpg" alt="Oreo Cheesecake">
+        <h3>Oreo Cheesecake</h3>
+        <p>₱170</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Oreo Cheesecake')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/frozen brazo.jpg" alt="Frozen Brazo De Mercedes">
+        <h3>Frozen Brazo De Mercedes</h3>
+        <p>₱110</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Frozen Brazo De Mercedes')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+
+      <div class="product">
+        <img src="images/red velvet.jpg" alt="Red Velvet Cake">
+        <h3>Red Velvet Cake</h3>
+        <p>₱150</p>
+        <label>Qty: <input type="number" value="1" min="1"></label>
+        <button onclick="addToCart('Red Velvet Cake')">Add to Cart</button>
+        <div class="rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+  </div>
+  <p class="rating-value">Your rating: 0</p>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Golden Brew</p>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
